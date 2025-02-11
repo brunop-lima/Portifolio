@@ -1,180 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="projeto Portifólio">
-    <meta name="author" content="Bruno Lima">
-    <meta name="keyword" content="HTML, CSS, JavaScript">
-    <link rel="icon" href="./assets/img/favicon.img" />
-    <title>portifólio</title>
+    <meta name="description" content="Projeto Portfólio">
+    <meta name="author" content="Rafael Queiróz">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <!--  Link para a Folha de Estilos CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Portfólio do Bruno 👽</title>
 </head>
+
 <body>
 
-    <header>
+    <!-- Cabeçalho da Página -->
+    <header class="flex menu_container">
 
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
 
+            <!-- Título do Cabeçalho -->
             <div id="titulo">
-               <a href="#"> MiniVerso
+                <a href="#">MiniVerso</a>
             </div>
 
-            <div id="menu">
+            <!-- Menu -->
+            <div id="menu" class="flex">
                 <nav>
-                    <ul>
-                        <li><a href="#"> Home </a></li>
-                        <li><a href="#about"> Sobre </a></li>
-                        <li><a href="#contact"> Contato </a></li>
+                    <!-- Marcadores não Ordenados para criar as opções do menu -->
+                    <ul class="flex menu_list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
                     </ul>
                 </nav>
             </div>
-
         </div>
-        
+
     </header>
 
+    <!-- Seção Principal da Página -->
     <main>
 
-        <section id="home">
-            
-            <article id="home_texto">
+        <!-- Seção home -->
+        <section id="home" class="flex home_container">
 
-                <h4> Bem vindo ao meu MiniVerso </h4>
-                <h1> Onde pequenos detalhes criam grandes mundos! 🪐 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate excepturi, quo debitis eius unde veritatis, pariatur sed officia, vitae consequatur numquam nemo! Corporis, culpa earum eligendi ipsum labore quisquam.</p>
-                <a 
-                    href="https://github.com/brunop-lima"
-                    target="_blank"
-                    >
-                    Explorer
+            <!-- Texto da Seção Home -->
+            <article id="home_texto" class="flex home_content">
+
+                <h4>Bem vindo ao meu MiniVerso</h4>
+                <h1>Onde pequenos detalhes criam grandes mundos! 🪐</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum eum sapiente maiores adipisci
+                    aperiam sint dignissimos molestias voluptas expedita doloribus consequatur saepe maxime, tempore
+                    modi eligendi, eius, eos itaque.</p>
+                <a href="https://github.com/rafaelq80" target="_blank" class="botao">
+                    Explorar
                 </a>
+
             </article>
 
-           
-        </section> 
-        
-        <article id="home_image">
-
-            <img 
-                src="assets/img/astronauta.svg"
-                alt="capacete de astronauta">
-        </article>
-       
-        <section id="about">
-
-            <article id="about">
+            <!-- Imagem da Seção Home -->
+            <article id="home_imagem" class="flex home_content">
                 <img
-                    src="assets/img/user_01.svg"
-                    alt="foto do criador do conteudo"
-                >
+                    src="./assets/img/MagoAstronauta.svg"
+                    alt="Mago Astronauta">
             </article>
 
-            <article id="about_texto">
-                <h1>Sobre mim</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ut quasi dolor eum libero voluptates unde aliquid laborum. Amet nesciunt incidunt dolor fuga vitae debitis distinctio mollitia tempora dolore earum.</p>
+        </section>
 
-                <div id="about_github"> 
-                    <a
-                        href="link do repositório"
-                        target="_blank"
-                        >
-                    GitHub
-                </a>
-                <p>200seguidores</p>
-                <p>20 repositorios</p>
+        <!-- Seção sobre -->
+        <section id="about" class="flex sobre_container">
+
+            <!-- Imagem da Seção Sobre -->
+            <img
+                src="./assets/img/user_01.svg"
+                alt="Foto do Perfil do Github">
+
+            <!-- Texto da Seção Sobre -->
+            <article id="about_texto">
+                <h2>Sobre mim</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil magni doloremque sint, qui facere
+                    fugit sequi optio molestiae sunt! Maiores sapiente atque nulla mollitia earum delectus nostrum natus
+                    architecto?</p>
+
+                <!-- Detalhes do Github -->
+                <div id="about_github" class="flex sobre_github">
+                    <a href="https://github.com/brunop-lima" target="_blank" class="botao">
+                        Github
+                    </a>
+                    <p>200 Seguidores</p>
+                    <p>20 Repositórios</p>
+                </div>
+
+            </article>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contact" class="contato_container">
+
+            <article id="redes_sociais" class="contato_content">
+                <h4>Contate-me</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae voluptas error omnis,
+                    deleniti molestiae dolores earum incidunt sint minus magni sunt maiores minima, cumque quam numquam
+                    officia obcaecati perspiciatis.</p>
+
+                <!-- Redes Sociais -->
+                <div id="icones_redes_sociais" class="social_container">
+                    <a href="https://www.linkedin.com/in/brunoplima01/" target="_blank">
+                        <img
+                            src="./assets/img/linkedin.svg"
+                            alt="Logo do LinkedIn"
+                            class="social_icon">
+                    </a>
+                    <a href="https://github.com/brunop-lima" target="_blank">
+                        <img
+                            src="./assets/img/github.svg"
+                            alt="Logo do Github"
+                            class="social_icon">
+                    </a>
+                    <a href="https://www.instagram.com/cheke_pl/" target="_blank">
+                        <img
+                            src="./assets/img/instagram.svg"
+                            alt="Logo do Instagram"
+                            class="social_icon">
+                    </a>
                 </div>
             </article>
 
+            <!-- Formulário de Contato -->
+            <form action="" method="POST">
 
-        </section>
-        
-        <section id="contact">
-
-            <h4> Contate-me </h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque asperiores tempore necessitatibus fuga blanditiis, ex minima esse laboriosam a facere, earum, animi pariatur beatae accusamus! Ea quisquam laudantium eum inventore?</p>
-
-            <div id="icons">
-                <a 
-                href="https://www.linkedin.com/in/brunoplima01/"
-                target="_blank "
-                >
-                    <img
-                        src="assets/img/linkedin.svg"
-                        alt="Linkedin"
-                    >
-                </a>
-
-                <a href="https://github.com/brunop-lima"
-                target="_blank "
-                >
-                    <img
-                        src="assets/img/github.svg"
-                        alt="GitHub"
-                    >
-                </a>
-
-                <a 
-                    href="https://www.instagram.com/cheke_pl/"
-                    target="_blank "
-                    >
-                    <img
-                        src="assets/img/instagram.svg"
-                        alt="instagram"
-                    >
-                </a>
-
-            </div>
-
-            <form action="confirmacao.html" method="POST">
-
-                <label for="nome"> Nome </label>
-                <input
-                    id="Nome"
-                    type="text"
-                    name="nome"
-                    placeholder="digite o seu Nome"
-                >
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" name="nome" placeholder="Digite o seu nome">
                 <span id="txtNome"></span>
 
-                <label for="email"> Email </label>
-                <input
-                    id="email"
-                    type="text"
-                    name="email"
-                    placeholder="digite o seu email"
-                >
+                <label for="email">E-mail</label>
+                <input id="email" type="text" name="email" placeholder="Digite o endereço do seu e-mail">
                 <span id="txtEmail"></span>
 
-                <label for="assunto"> Assunto </label>
-                <input
-                    id="assunto"
-                    type="text"
-                    name="assunto"
-                    placeholder="digite o assunto da mendagem"
-                >
+                <label for="assunto">Assunto</label>
+                <input id="assunto" type="text" name="assunto" placeholder="Digite o assunto da mensagem">
                 <span id="txtAssunto"></span>
 
-                <label for="mensagem"> Mensagem </label>
-                <textarea
-                    id="mensagem"
-                    type="text"
-                    name="mensagem"
-                    placeholder="digite a sua mensagem"
-                >
-                </textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
 
-                <button type="submit">Enviar</button>
-                
+                <button type="submit" class="botao">Enviar</button>
             </form>
 
         </section>
-        
-    </main> 
 
+    </main>
+
+    <!-- Rodapé da Página -->
     <footer>
-        <!-- Win + .-->
-        Feito por 👽 Bruno Lima
+        Feito por 👽 Bruno Lima - 2025
     </footer>
 
+    <script src="./assets/scripts.js"></script>
 </body>
-</html>.
+
+</html>
