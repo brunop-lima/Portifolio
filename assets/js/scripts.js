@@ -12,7 +12,7 @@ async function getApiGithub(){
     try{
 
         // Envia a Requisição HTTP
-        const dadosPerfil = await fetch(`https://api.github.com/users/rafaelq80`);
+        const dadosPerfil = await fetch(`https://api.github.com/users/brunop-lima`);
         
         // Converte a resposta para o formato JSON
         const perfil = await dadosPerfil.json();
